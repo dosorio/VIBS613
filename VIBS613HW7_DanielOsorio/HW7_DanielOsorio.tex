@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{paper}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[makeroom]{cancel}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{Sweave}
+\begin{document}
+\input{HW7_DanielOsorio-concordance}
+\title{VIBS613 - Homework 7\\\small{Daniel Osorio - dcosorioh@tamu.edu\\Department of Veterinary Integrative Biosciences\\Texas A\&M University}}
+\maketitle
+\begin{enumerate}
+\item  In a quest to make bigger frogs, scientists started with a random bred population of frogs with an average weight of 500 g. They chose a group with average weight 600 g to be
+the parents of the next generation. A few other facts: $V_E$ = 1340, $V_A$ = 870, $V_D$ = 410.
+\begin{enumerate}
+\item What is the genetic variance ($V_G$)?\\
+\begin{equation*}
+\begin{split}
+V_{G} &= V_{A} + V_{D}\\
+V_{G} &= 870 + 410\\
+V_{G} &= 1280
+\end{split}
+\end{equation*}
+\item What is the total variance ($V_T$)?
+\begin{equation*}
+\begin{split}
+V_{T} &= V_{G} + V_{E}\\
+V_{T} &= 1280 + 1340\\
+V_{T} &= 2620
+\end{split}
+\end{equation*}
+\item What is the broad sense heritability ($H$)?
+\begin{equation*}
+\begin{split}
+H &= \frac{V_{G}}{V_{T}}\\
+H &= \frac{1280}{2620}\\
+H &= 0.4885
+\end{split}
+\end{equation*}
+\item What is the narrow sense heritability ($h$)?
+\begin{equation*}
+\begin{split}
+h &= \frac{V_{A}}{V_{T}}\\
+h &= \frac{870}{2620}\\
+h &= 0.332
+\end{split}
+\end{equation*}
+\item What is the mean weight of the next generation?
+\begin{equation*}
+\begin{split}
+h &= \frac{nextGenM - originalM}{selectedM - originalM}\\
+nextGenM - originalM &= (selectedM - originalM) \times h\\
+nextGenM &= ((selectedM - originalM) \times h) + originalM\\
+nextGenM &= ((600 g - 500 g) \times 0.332) + 500 g\\
+nextGenM & = (100g \times 0.332) + 500 g\\
+nextGenM &= 33.2g + 500 g\\
+nextGenM &= 533.2 g\\
+\end{split}
+\end{equation*}
+\end{enumerate}
+\end{enumerate}
+\end{document}

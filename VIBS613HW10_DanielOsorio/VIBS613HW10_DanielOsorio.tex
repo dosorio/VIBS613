@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{paper}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[makeroom]{cancel}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{Sweave}
+\begin{document}
+\input{VIBS613HW10_DanielOsorio-concordance}
+\title{VIBS613 - Homework 10\\\small{Daniel Osorio - dcosorioh@tamu.edu\\Department of Veterinary Integrative Biosciences\\Texas A\&M University}}
+\maketitle
+\begin{enumerate}
+\item  Given the undirected network $A--B A--C A--D A--E B--C B--E B--G B--H D--F E--I$, compute the \textbf{betweenes centrality of $A$: 13 }
+\begin{enumerate}
+\item $B--A--D$
+\item $B--A--D--F$
+\item $C--A--D$
+\item $C--A--E$
+\item $C--A--D--F$
+\item $D--A--E$
+\item $D--A--B--G$
+\item $D--A--B--H$
+\item $D--A--E--I$
+\item $E--A--D--F$
+\item $F--D--A--B--G$
+\item $F--D--A--B--H$
+\item $F--D--A--E--I$
+\end{enumerate}
+\item  Given the undirected network $A--B A--C A--D A--E B--C B--E$, \textbf{compute the clustering coefficient of $A$: 0.33}\[\frac{E(N(A))}{{N(A)\choose 2}} = \frac{2}{{4\choose 2}} = \frac{2}{6} = 0.33\]
+\end{enumerate}
+\end{document}
